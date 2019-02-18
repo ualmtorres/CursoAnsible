@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.5.dev">
 <meta name="author" content="Cloud-DI Team - Departamento de Informática. UAL">
-<title>Ansible. Automatización de operaciones</title>
+<title>Curso de iniciación a Ansible para la automatización de operaciones</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -421,7 +421,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="book toc2 toc-right">
 <div id="header">
-<h1>Ansible. Automatización de operaciones</h1>
+<h1>Curso de iniciación a Ansible para la automatización de operaciones</h1>
 <div class="details">
 <span id="author" class="author">Cloud-DI Team - Departamento de Informática. UAL</span><br>
 </div>
@@ -442,6 +442,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#trueconfiguraci-n-de-la-m-quina-de-control">4.1. Configuración de la máquina de control</a></li>
 <li><a href="#trueconfiguraci-n-de-las-m-quinas-administradas">4.2. Configuración de las máquinas administradas</a></li>
 <li><a href="#truecopia-de-claves-ssh-a-m-quinas-administradas">4.3. Copia de claves SSH a máquinas administradas</a></li>
+<li><a href="#trueherramientas-de-l-nea-de-comandos-instaladas-con-ansible">4.4. Herramientas de línea de comandos instaladas con Ansible</a></li>
 </ul>
 </li>
 <li><a href="#truearchivos-de-configuraci-n-y-de-inventario">5. Archivos de configuración y de inventario</a></li>
@@ -509,6 +510,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#trueadministraci-n-de-openstack">Anexo E: Administración de OpenStack</a>
 <ul class="sectlevel2">
 <li><a href="#trueconfiguraci-n-del-nodo-de-control-de-ansible">E.1. Configuración del nodo de control de Ansible</a></li>
+</ul>
+</li>
+<li><a href="#trueenlaces-de-inter-s">Anexo F: Enlaces de interés</a>
+<ul class="sectlevel2">
+<li><a href="#truem-dulos-interesantes">F.1. Módulos interesantes:</a></li>
+<li><a href="#trueansible-awx">F.2. Ansible AWX</a></li>
 </ul>
 </li>
 </ul>
@@ -784,6 +791,43 @@ ssh-copy-id -i ~/.ssh/id_rsa 20.0.0.22</code></pre>
 </td>
 </tr>
 </table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="trueherramientas-de-l-nea-de-comandos-instaladas-con-ansible"><a class="anchor" href="#trueherramientas-de-l-nea-de-comandos-instaladas-con-ansible"></a>4.4. Herramientas de línea de comandos instaladas con Ansible</h3>
+<div class="paragraph">
+<p>Tras la instalación de Ansible podemos comprobar que hay varias herramientas de línea de comandos instaladas:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>ansible</code>: Permite la ejecución directa de comandos sobre un conjunto de hosts.</p>
+</li>
+<li>
+<p><code>ansible-playbook</code>: Ejecuta playbooks sobre un conjunto de hosts.</p>
+</li>
+<li>
+<p><code>ansible-vault</code>: Cifra el contenido de archivos con datos sensibles, como los que contienen contraseñas.</p>
+</li>
+<li>
+<p><code>ansible-galaxy</code>: Instala roles de <a href="https://galaxy.ansible.com">Ansible Galaxy</a>, una plataforma para el intercambio de roles (recetas) Ansible.</p>
+</li>
+<li>
+<p><code>ansible-console</code>: Consola de ejecución de comandos.</p>
+</li>
+<li>
+<p><code>ansible-config</code>: Gestiona la configuración de Ansible.</p>
+</li>
+<li>
+<p><code>ansible-doc</code>: Muestra documentación sobre los módulos instalados.</p>
+</li>
+<li>
+<p><code>ansible-inventory</code>: Muestra información sobre el inventario de hosts.</p>
+</li>
+<li>
+<p><code>ansible-pull</code>: Descarga playbooks desde un sistema de control de versiones y lo ejecuta en el sistema local.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -3454,10 +3498,58 @@ sudo pip install pyopenssl</code></pre>
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="trueenlaces-de-inter-s"><a class="anchor" href="#trueenlaces-de-inter-s"></a>Anexo F: Enlaces de interés</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="truem-dulos-interesantes"><a class="anchor" href="#truem-dulos-interesantes"></a>F.1. Módulos interesantes:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://docs.ansible.com/ansible/2.4/list_of_cloud_modules.html#docker">Docker</a></p>
+</li>
+<li>
+<p><a href="https://docs.ansible.com/ansible/2.4/list_of_cloud_modules.html#vmware">VMware</a></p>
+</li>
+<li>
+<p><a href="https://docs.ansible.com/ansible/2.4/expect_module.html">expect</a>: Ejecuta un comando y proporciona una respuesta</p>
+</li>
+<li>
+<p><a href="https://docs.ansible.com/ansible/2.4/list_of_crypto_modules.html">Certificados y pares de claves</a></p>
+</li>
+<li>
+<p><a href="https://docs.ansible.com/ansible/2.4/list_of_net_tools_modules.html#ldap">LDAP</a></p>
+</li>
+<li>
+<p><a href="https://docs.ansible.com/ansible/2.4/list_of_notification_modules.html">Notificaciones</a></p>
+</li>
+<li>
+<p><a href="https://docs.ansible.com/ansible/2.4/list_of_source_control_modules.html">Sistemas de control de versiones</a></p>
+</li>
+<li>
+<p><a href="https://docs.ansible.com/ansible/2.4/list_of_system_modules.html">Sistema</a></p>
+</li>
+<li>
+<p><a href="https://docs.ansible.com/ansible/2.4/list_of_windows_modules.html">Windows</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="trueansible-awx"><a class="anchor" href="#trueansible-awx"></a>F.2. Ansible AWX</h3>
+<div class="paragraph">
+<p><a href="https://github.com/ansible/awx">Ansible AWX</a> es una interfaz web para la administración de playbooks Ansible. Se trata de la versión open source de <a href="https://www.ansible.com/products/tower">Ansible Tower</a>.</p>
+</div>
+<div class="paragraph">
+<p>Para una prueba, <a href="https://www.jeffgeerling.com/blog/2017/get-started-using-ansible-awx-open-source-tower-version-one-minute">descarga Ansible AWX</a></p>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-02-18 20:32:21 CET
+Last updated 2019-02-19 00:00:58 CET
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">

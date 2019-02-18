@@ -18,7 +18,7 @@ Codificación, idioma, tabla de contenidos, tipo de documento
 ////
 Nombre y título del trabajo
 ////
-# Ansible. Automatización de operaciones
+# Curso de iniciación a Ansible para la automatización de operaciones
 Cloud-DI Team - Departamento de Informática. UAL
 
 image::di.png[]
@@ -200,6 +200,20 @@ Si hemos creado las instancias de Ansible en OpenStack, dichas instancias ya se 
 
 Podemos crear un par de claves para la ocasión y distribuirla desde la máquina de control de Ansible a las máquinas remotas. Otra opción es copiar a la máquina de control Ansible la clave privada que empareja con la clave pública que ya tienen inyectada las instancias
 ====
+
+### Herramientas de línea de comandos instaladas con Ansible
+
+Tras la instalación de Ansible podemos comprobar que hay varias herramientas de línea de comandos instaladas:
+
+* `ansible`: Permite la ejecución directa de comandos sobre un conjunto de hosts.
+* `ansible-playbook`: Ejecuta playbooks sobre un conjunto de hosts.
+* `ansible-vault`: Cifra el contenido de archivos con datos sensibles, como los que contienen contraseñas.
+* `ansible-galaxy`: Instala roles de https://galaxy.ansible.com[Ansible Galaxy], una plataforma para el intercambio de roles (recetas) Ansible.
+* `ansible-console`: Consola de ejecución de comandos.
+* `ansible-config`: Gestiona la configuración de Ansible.
+* `ansible-doc`: Muestra documentación sobre los módulos instalados.
+* `ansible-inventory`: Muestra información sobre el inventario de hosts.
+* `ansible-pull`: Descarga playbooks desde un sistema de control de versiones y lo ejecuta en el sistema local.
 
 ## Archivos de configuración y de inventario
 
@@ -2087,3 +2101,27 @@ sudo rm -rf /usr/lib/python2.7/dist-packages/OpenSSL
 sudo  rm -rf /usr/lib/python2.7/dist-packages/pyOpenSSL-0.15.1.egg-info
 sudo pip install pyopenssl
 ----
+
+[appendix]
+
+## Enlaces de interés
+
+### Módulos interesantes:
+
+* https://docs.ansible.com/ansible/2.4/list_of_cloud_modules.html#docker[Docker]
+* https://docs.ansible.com/ansible/2.4/list_of_cloud_modules.html#vmware[VMware]
+* https://docs.ansible.com/ansible/2.4/expect_module.html[expect]: Ejecuta un comando y proporciona una respuesta
+* https://docs.ansible.com/ansible/2.4/list_of_crypto_modules.html[Certificados y pares de claves]
+* https://docs.ansible.com/ansible/2.4/list_of_net_tools_modules.html#ldap[LDAP]
+* https://docs.ansible.com/ansible/2.4/list_of_notification_modules.html[Notificaciones]
+* https://docs.ansible.com/ansible/2.4/list_of_source_control_modules.html[Sistemas de control de versiones]
+* https://docs.ansible.com/ansible/2.4/list_of_system_modules.html[Sistema]
+* https://docs.ansible.com/ansible/2.4/list_of_windows_modules.html[Windows]
+
+### Ansible AWX
+
+https://github.com/ansible/awx[Ansible AWX] es una interfaz web para la administración de playbooks Ansible. Se trata de la versión open source de https://www.ansible.com/products/tower[Ansible Tower].
+
+Para una prueba, https://www.jeffgeerling.com/blog/2017/get-started-using-ansible-awx-open-source-tower-version-one-minute[descarga Ansible AWX]
+
+
