@@ -1,0 +1,28 @@
+////
+NO CAMBIAR!!
+Codificación, idioma, tabla de contenidos, tipo de documento
+////
+:encoding: utf-8
+:lang: es
+:doctype: book
+
+////
+Nombre y título del trabajo
+////
+# Curso de Automatización de operaciones de Administración de sistemas - Febrero 2019
+Cloud-DI Team - Departamento de Informática. UAL
+
+image::images/di.png[]
+
+// NO CAMBIAR!! (Entrar en modo no numerado de apartados)
+:numbered!: 
+
+La Automatización de operaciones ...
+
+A continuación esta disponible el material del Curso de Automatización de operaciones de Administracion de sistemas para el STIC de la UAL.
+
+* link:motivacion/index.html[Motivación]
+* https://[Tutorial]
+
+
+
