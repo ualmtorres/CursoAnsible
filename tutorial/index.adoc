@@ -2108,15 +2108,15 @@ sudo pip install pyopenssl
 
 ### Módulos interesantes:
 
-* https://docs.ansible.com/ansible/2.4/list_of_cloud_modules.html#docker[Docker]
-* https://docs.ansible.com/ansible/2.4/list_of_cloud_modules.html#vmware[VMware]
-* https://docs.ansible.com/ansible/2.4/expect_module.html[expect]: Ejecuta un comando y proporciona una respuesta
-* https://docs.ansible.com/ansible/2.4/list_of_crypto_modules.html[Certificados y pares de claves]
-* https://docs.ansible.com/ansible/2.4/list_of_net_tools_modules.html#ldap[LDAP]
-* https://docs.ansible.com/ansible/2.4/list_of_notification_modules.html[Notificaciones]
-* https://docs.ansible.com/ansible/2.4/list_of_source_control_modules.html[Sistemas de control de versiones]
-* https://docs.ansible.com/ansible/2.4/list_of_system_modules.html[Sistema]
-* https://docs.ansible.com/ansible/2.4/list_of_windows_modules.html[Windows]
+* https://docs.ansible.com/ansible/latest/list_of_cloud_modules.html#docker[Docker]
+* https://docs.ansible.com/ansible/latest/list_of_cloud_modules.html#vmware[VMware]
+* https://docs.ansible.com/ansible/latest/expect_module.html[expect]: Ejecuta un comando y proporciona una respuesta
+* https://docs.ansible.com/ansible/latest/list_of_crypto_modules.html[Certificados y pares de claves]
+* https://docs.ansible.com/ansible/latest/list_of_net_tools_modules.html#ldap[LDAP]
+* https://docs.ansible.com/ansible/latest/list_of_notification_modules.html[Notificaciones]
+* https://docs.ansible.com/ansible/latest/list_of_source_control_modules.html[Sistemas de control de versiones]
+* https://docs.ansible.com/ansible/latest/list_of_system_modules.html[Sistema]
+* https://docs.ansible.com/ansible/latest/list_of_windows_modules.html[Windows]
 
 ### Ansible AWX
 
